@@ -1,0 +1,18 @@
+{
+    "project_name": {
+        "name": "Brattice"
+      },
+      "mgmt_network": {
+        "subnet": "10.50.99.0/24",
+        "vlan": "1599"
+      },
+      "prod_network": {
+        "subnet": "10.50.20.0/24",
+        "vlan": "1520"
+      },
+      "l3out_network": {
+        "subnet": "10.0.5.24/29",
+        "vlan": "503"
+      }
+
+}
