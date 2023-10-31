@@ -7,8 +7,8 @@
         "vlan": "1599"
       },
       "prod_network": {
-        "subnet": "10.50.20.0/24",
-        "vlan": "1520"
+        "subnet": "10.50.98.0/24",
+        "vlan": "1598"
       },
       "l3out_network": {
         "subnet": "10.0.5.24/29",

@@ -91,8 +91,8 @@ resource "aci_bgp_peer_connectivity_profile" "BGP-PEER1" {
   parent_dn   = aci_l3out_path_attachment.L3OUT_Path_Attachment.id
   addr        = cidrhost(local.ico_input.l3out_network.subnet, 5)
   addr_t_ctrl = ["af-ucast"]
-  as_number   = local.bgp_remote_as
-  local_asn   = local.bgp_local_as
+  as_number   = var.core_bgp_asn
+  local_asn   = var.aci_bgp_asn
   admin_state = "enabled"
 }
 
@@ -100,7 +100,7 @@ resource "aci_bgp_peer_connectivity_profile" "BGP-PEER2" {
   parent_dn   = aci_l3out_path_attachment.L3OUT_Path_Attachment.id
   addr        = cidrhost(local.ico_input.l3out_network.subnet, 6)
   addr_t_ctrl = ["af-ucast"]
-  as_number   = local.bgp_remote_as
-  local_asn   = local.bgp_local_as
+  as_number   = var.core_bgp_asn
+  local_asn   = var.aci_bgp_asn
   admin_state = "enabled"
 }

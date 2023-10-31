@@ -6,15 +6,17 @@ locals {
   aci_vlan_pool_phys_domain = "BRATTICE-FI-UCSX"
 
   vpc_interface_policy_group = "VPC_to_OTT-CORE"
-  bgp_local_as               = "65003"
-  bgp_remote_as              = "65001"
-  vmm_name                   = "BMaaS-Infra"
+  //bgp_local_as               = "65003"
+  //bgp_remote_as              = "65001"
+  vmm_name = "BMaaS-Infra"
 
 }
 
 
 variable "credentials" {}
 variable "project_name" {}
+variable "aci_bgp_asn" {}
+variable "core_bgp_asn" {}
 
 
 variable "l3out_config" {
